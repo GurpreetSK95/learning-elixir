@@ -1,6 +1,6 @@
 # Cards
 
-**TODO: Add description**
+Elixir app to deal and play with cards.
 
 ## Installation
 
