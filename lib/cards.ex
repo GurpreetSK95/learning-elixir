@@ -30,6 +30,14 @@ defmodule Cards do
 
   @doc """
     Splits the deck into two parts of size `hand-size` and deck - `hand-size`.
+
+    ## Examples
+
+      iex> deck = Cards.create_deck()
+      iex> {hand, deck} = Cards.split(deck, 2)
+      iex> hand
+      ["Ace of Spades", "King of Hearts"]
+
   """
   def split(deck, hand_size) do
     Enum.split(deck, hand_size)
