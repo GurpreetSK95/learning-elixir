@@ -52,4 +52,13 @@ defmodule Cards do
       {:error, _status} -> "Not found"
     end
   end
+
+  @doc """
+    Deal a hand of given size.
+  """
+  def deal(hand_size) do
+    create_deck()
+      |> shuffle()
+      |> split(hand_size)
+  end
 end
