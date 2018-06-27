@@ -36,7 +36,7 @@ defmodule Cards do
       iex> deck = Cards.create_deck()
       iex> {hand, deck} = Cards.split(deck, 2)
       iex> hand
-      ["Ace of Spades", "King of Hearts"]
+      ["Ace of Diamonds", "Ace of Spades"]
 
   """
   def split(deck, hand_size) do
