@@ -23,6 +23,13 @@ defmodule Cards do
 
   @doc """
     Returns whether the deck contains the given card or not.
+
+    ## Examples
+
+    iex> deck = Cards.create_deck
+    iex> deck |> Cards.contains?("Ace of Diamonds")
+    true
+
   """
   def contains?(deck, card) do
     Enum.member?(deck, card)
